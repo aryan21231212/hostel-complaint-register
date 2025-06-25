@@ -17,7 +17,7 @@ export default function AdminDashboard() {
 
     const statushandler = async (e) => {
         e.preventDefault();
-        let response = await fetch('http://localhost:3000/updateStatus', {
+        let response = await fetch('https://hostel-complaint-register.onrender.com/updateStatus', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -45,7 +45,7 @@ export default function AdminDashboard() {
 
     useEffect(() => {
         const allcomplains = async () => {
-            let response = await fetch('http://localhost:3000/allComplains');
+            let response = await fetch('https://hostel-complaint-register.onrender.com/allComplains');
             let data = await response.json();
 
             const updatedComplaints = data.data.map((ele) => {

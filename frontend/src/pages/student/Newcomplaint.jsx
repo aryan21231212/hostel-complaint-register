@@ -23,7 +23,7 @@
                 formData.append("image", image);
             }
 
-            let response = await fetch("http://localhost:3000/complaint", {
+            let response = await fetch("https://hostel-complaint-register.onrender.com/complaint", {
                 method: "POST",
                 body: formData,
             })

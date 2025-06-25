@@ -7,7 +7,7 @@ const PreviousComplain = () => {
 
   useEffect(() => {
     const previousComplaint = async () => {
-      let response = await fetch('http://localhost:3000/allcomplaint', {
+      let response = await fetch('https://hostel-complaint-register.onrender.com/allcomplaint', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
