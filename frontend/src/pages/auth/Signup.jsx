@@ -74,7 +74,6 @@ const Signup = () => {
                 <select value={role} onChange={(e) => setrole(e.target.value)} name="role" id="">
                   <option value="">Select your role</option>
                   <option value="student">Student</option>
-                  <option value="admin">Admin</option>
                 </select>
                 <button type='submit'>Submit</button>
                 <p style={{ marginLeft: "1rem" }} className='mt-2 ml-10'>
